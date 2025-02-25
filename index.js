@@ -1,3 +1,36 @@
+//  example document
+{
+  "gender": "female",
+  "eyeColor": "green",
+  "favoriteFruit": "banana",
+  "_id": {
+    "$oid": "67bcbb49f68c200b7719296a"
+  },
+  "index": 0,
+  "name": "Aurelia Gonzales",
+  "isActive": false,
+  "registered": {
+    "$date": "2015-02-11T04:22:39.000Z"
+  },
+  "tags": [
+    "enim",
+    "id",
+    "velit",
+    "ad",
+    "consequat"
+  ],
+  "age": 20,
+  "company": {
+    "title": "YURTURE",
+    "email": "aureliagonzales@yurture.com",
+    "phone": "+1 (940) 501-3963",
+    "location": {
+      "address": "694 Hewes Street",
+      "country": "USA"
+    }
+  }
+}
+
 //    ---- find how many users are active
 // [
 //   {
@@ -52,4 +85,24 @@
 //       }
 //     }
 //   },
+// ]
+
+// --- which country has the heights number of registed users 
+// [
+//   {
+//     $group: {
+//       _id : "$company.location.country",
+//       countryCount : {
+//         $sum :1
+//       }
+//     }
+//   },
+//   {
+//     $sort: {
+//       countryCount :-1
+//     }
+//   },
+//   {
+//     $limit:2
+//   }
 // ]
