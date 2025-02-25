@@ -106,3 +106,12 @@
 //     $limit:2
 //   }
 // ]
+
+//  list all unique eye color
+// [
+//   {
+//     $group: {
+//       _id: "$eyeColor",
+//     }
+//   }
+// ]
