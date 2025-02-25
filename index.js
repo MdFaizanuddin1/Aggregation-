@@ -21,3 +21,23 @@
 //     }
 //   }
 // ]
+
+// list five find most common fruits
+// [
+//   {
+//     $group: {
+//       _id: "$favoriteFruit",
+//       count:{
+//         $sum :1
+//       }
+//     }
+//   },
+//   {
+//     $sort: {
+//       count : -1
+//     }
+//   },
+//   {
+//     $limit:2
+//   }
+// ]
