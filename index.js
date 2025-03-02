@@ -157,3 +157,16 @@
 //     }
 //   }
 // ]
+
+// How many users have 'enim' as one of their tags or any tag
+
+// [
+//   {
+//     $match: {
+//     	tags: "enim"
+//     }
+//   },
+//   {
+//     $count : "userWithEnimTag"
+//   }
+// ]
