@@ -252,3 +252,15 @@
 //     $count: 'secondTagAsAd'
 //   }
 // ]
+
+// find users who have both 'enim', and 'id' as their tag
+
+// [
+//   {
+//     $match: {
+//       tags: {
+//         $all: ["enim", "id"],
+//       },
+//     },
+//   },
+// ]
