@@ -200,3 +200,21 @@
 //     $count: 'userWithSpecialPhone'
 // 	},
 // ]
+
+// who has registered most recently?
+
+// [
+//   {
+//     $sort: {
+//       registered: -1
+//     }
+//   },
+//   { $limit: 5 } ,
+//   {
+//     $project: {
+//       name:1,
+//       registered:1,
+//       favoriteFruit:1,
+//     }
+//   }
+// ]
